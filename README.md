@@ -10,6 +10,13 @@ Adobe AIR uses own OpenGL ES 2 context and any integrated game should reuse it w
 2. `OpenGLTests.xcodeproj` - project to test static library
 3. `IntegrationDemo.xcodeproj` - project to test game before integration into static IS_ANE_LIBRARY
 
+### Testing
+
+You should test your static library by running it from the `OpenGLTests` where you should integrate it.
+App will show test screen, after taping on the screen will be opened your game. You should be able to return to the previous screen by some exit button on the your UI.
+
+App should be possible to go froward and backward many times without crashes, memory leaks and corruption of the first OpenGL ES context.
+
 ### Important blocks
 
 #### Library
