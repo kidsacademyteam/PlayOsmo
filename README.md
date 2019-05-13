@@ -1,1 +1,1 @@
-playosmo
+# Play Osmo integration example
